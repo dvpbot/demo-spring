@@ -13,6 +13,9 @@ jobs:
       - name: Descargar código
         uses: actions/checkout@v4
 
+      - name: Dar permiso a mvnw
+        run: chmod +x mvnw
+
       - name: Instalar Java
         uses: actions/setup-java@v4
         with:
